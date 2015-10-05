@@ -41,7 +41,6 @@ bundle exec rake spree_auth:admin:create
 You will be prompted to set your admin username and password. Set an admin username and password.
 
 ##To view your admin panel in your browser:
-http://localhost:3000/admin
 [http://localhost:3000/admin](http://localhost:3000/admin)
 
 (it will probably take you to http://localhost:3000/login)
