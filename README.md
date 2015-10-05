@@ -1,10 +1,9 @@
 #Spree Commerce: Frontend Customisation
----
+
 I had an incredibly hard time trying to find a tutorial for customising the frontend of a Spree Commerce Storefront, so I decided to try figure it out and document my potential fails here.
 
 
 ##Setting up Spree Commerce with Devise
----
 
 Create a new rails app:
 ```
