@@ -62,3 +62,13 @@ To change the background of `#spree_header`, to to `vendor/stylesheets/frontend/
   background: red;
 }
 ```
+
+##Editing the logo image in spree.rb
+To change the logo using this method, open `config/initializers/spree.rb` and add the following:
+```ruby
+Spree.config do |config|
+  config.admin_interface_logo = 'logo/logo.jpg'
+  config.logo = 'logo/logo.jpg'
+end
+```
+Make sure to add your logo image to `app/assets/images/` if you want it to show up
