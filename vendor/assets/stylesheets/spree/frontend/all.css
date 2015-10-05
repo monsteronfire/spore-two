@@ -10,5 +10,9 @@
 */
 
 #spree-header {
-  background: red;
+  background: #FFCC11;
+}
+
+#spree-header #header {
+  background: rgba(34, 34, 34, 0.05);
 }
