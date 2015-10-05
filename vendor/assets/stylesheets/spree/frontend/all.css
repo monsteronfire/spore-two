@@ -8,3 +8,7 @@
  *= require_self
  *= require_tree .
 */
+
+#spree-header {
+  background: red;
+}

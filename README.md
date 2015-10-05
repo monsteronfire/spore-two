@@ -26,7 +26,7 @@ Then, in your terminal, install all the above by running:
 bundle install
 ```
 
-configure spree devise
+Setting up spree devise
 ```
 bundle exec rake spree_auth:install:migrations
 bundle exec rake db:migrate
@@ -45,3 +45,21 @@ http://localhost:3000/admin
 [http://localhost:3000/admin](http://localhost:3000/admin)
 
 (it will probably take you to http://localhost:3000/login)
+
+##Using Deface to edit HTML
+To change the logo, create a new file `logo.rb` in `app/overrides/` and paste the following into the file:
+
+```ruby
+Deface::Override.new(:virtual_path => "spree/shared/_header", 
+                     :name => "logo", 
+                     :replace_contents => "#logo", 
+                     :text => "<h1>Store</h1>")
+```
+
+##Editing CSS
+To change the background of `#spree_header`, to to `vendor/stylesheets/frontend/all.css` and paste the following in to override existing background:
+```
+#spree-header {
+  background: red;
+}
+```
