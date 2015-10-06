@@ -72,3 +72,15 @@ Spree.config do |config|
 end
 ```
 Make sure to add your logo image to `app/assets/images/` if you want it to show up
+
+##Change the route for Spree store to point to `/store` by adding this to the `route.rb` file:
+Change the route for the spree store to:
+```ruby
+mount Spree::Core::Engine, :at => '/store'
+```
+
+##Creating a Welcome page for store
+Generate a welcome controller. You don't need a model for this:
+```
+rails generate controller Welcome index
+```
