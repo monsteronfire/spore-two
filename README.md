@@ -84,3 +84,11 @@ Generate a welcome controller. You don't need a model for this:
 ```
 rails generate controller Welcome index
 ```
+
+To make the new welcome page inherit the site's styles, make sure your `welcome_controller.rb` is inheriting from the `Spree::BaseController`, like so:
+```ruby
+class WelcomeController < Spree::BaseController
+  def index
+  end
+end
+```
